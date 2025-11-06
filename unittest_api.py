@@ -158,7 +158,7 @@ class TestToken(unittest.TestCase):
         self.assertStatus(response, 400)
 
     def test_case11(self):
-        """ Передача title, в котором > 1000 символов """
+        """ Передача title, в котором 0 символов """
         token = self.getCode()
         data = {
             "title": "",
